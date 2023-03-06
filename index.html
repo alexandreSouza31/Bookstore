@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Livraria ler é saber</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/reset.css">
+        <link rel="stylesheet" href="style/style2.css">
+
+    </head>
+
+    <body>
+        <div class="formCadastro__app">
+            <h1>Livraria bom saber</h1>
+            <div class="formCadastro__container">
+                <h3 class="heading">Cadastre um livro</h1>
+
+                <form action="#" class="formCadastro" id="shopping-add">
+                    <label for="">Id</label>
+                    <input type="number" class="id" disabled 
+                    placeholder="gerado automaticamente">
+
+                    <label for=""  title="nome do livro">Nome</label>
+                    <input type="text" class="nome" required>
+
+                    <label for="" >Autor</label>
+                    <input type="text" class="autor" required>
+
+                    <label for=""  title="ano do livro">Ano</label>
+                    <input type="number" class="ano" required>
+
+                    <label for=""  title="Padrão Internacional de Numeração de
+                        Livro">ISBN</label>
+                    <input type="text" class="isbn" required>
+
+                    <label for="" >Data de cadastro</label>
+                    <input type="datetime-local" class="data_cadastro" required>
+
+                    <label for="" >Tema</label>
+                    <input type="text" class="tema" required>
+
+                    <label for="">Observação</label>
+                    <textarea id="" class="obs" cols="30" rows="5"></textarea>
+
+                    <div class="btns">
+                        <a href="listar_livros.html" id="ver_livros">livros cadastrados</a>
+                        <input id="add" type="submit" value="Adicionar">
+                    </div>
+                </form>
+            </div>
+
+            <div id="feedbackMessage" hidden>
+                <p>aa</p>
+                <button><span class="fa fa-close"></span></button>
+
+            </div>
+        </div>
+        <footer>
+            <p class="copyright">&copy; Copyright Alexandre Mariano - 2022</p>
+        </footer>
+        <script src="JS/scripts2.js" defer></script>
+    </body>
+
+</html>
